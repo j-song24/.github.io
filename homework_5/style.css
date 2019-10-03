@@ -1,0 +1,430 @@
+/* Style text on home page*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    background-color: #513B41;
+}
+
+
+.redPage {
+	background-color: #513B41
+	color: #FFFFFF;
+}
+
+
+.whitePage {
+	background-color: #FFFFFF;
+	color: #513B41;
+}
+
+h2 {
+	color: #FFFFFF;
+}
+
+.whitePage .back a {
+	color: #513B41;
+}
+
+.redPage .back a {
+	color: #FFFFFF;
+}
+
+/*Header*/
+
+/* Add a colored background to the top navigation */
+.topNav {
+  background-color: #513B41;
+  overflow: hidden;
+  margin: -8px;
+}
+
+/* Style the links inside the navigation bar */
+
+#logo {
+	float: left;
+	width: 64px;
+	height: auto;
+	margin: 0 2%;
+}
+
+#shoppingCart{
+	float: right;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 1%;
+	width: 42px;
+	height: auto;
+}
+
+#searchIcon {
+	float: right;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 1%;
+	width: 42px;
+	height: auto;
+}
+
+#shop, #about {
+	float: right;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 1%;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+/* Formatting Images on Home Page */
+
+.imageText {
+	margin: 5%;
+	width: 600px; 
+	height: 400px;
+	font-size: 36px;
+}
+
+#hpImages:hover, #hpImages2:hover {
+  	visibility: visible;
+    opacity: 1;
+}
+
+#hpImages, #hpImages2 {
+	width: 100%;
+  	height: auto;
+  	opacity: 0.7;
+  	border-radius: 5%;
+
+}
+
+#hpImages{
+	margin: 3%;
+	width: 600px; 
+	height: 400px; 
+	background-image: url("https://cdn.coolofthewild.com/wp-content/uploads/2017/01/Backpacking-with-dogs.jpg");
+	background-position: center;
+	float: left;
+}
+
+#hpImages2{
+	margin: 3%;
+	width: 600px; 
+	height: 400px; 
+	background-image: url("https://media.gadventures.com/media-server/dynamic/blogs/posts/rebecca-tucker/2017/08/BoltKeel3.jpeg");
+	background-position: center;
+	float: left;
+
+}
+
+/* Clear floats after the columns */
+.imageWrapper:after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+}
+
+/* Style button on home page*/
+button {
+	background-color: #F83839;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: "Montserrat";
+	font-size: 24px;
+	padding: 20px 50px;
+	border-color: #F83839;
+	border-radius: 50px;
+}
+
+.hpButton, .hpText {
+	text-align: center;
+}
+
+/*Style Banner and Images on All Product Page*/
+.banner {
+	display: flex;
+	margin: 2%;
+}
+
+.textBox {
+	background: #7C6C70;
+	color: white;
+	flex: 5;
+	padding: 10%;
+}
+
+.image {
+	flex: 8;
+}
+
+.image img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.description{
+	margin: 2%;
+}
+
+.row {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	padding: 0 4px;
+}
+
+
+#shopDescription {
+	color:#513B41;
+}
+
+
+.productDesc {
+  padding: 15px;
+  text-align: center;
+  color: #513B41;
+}
+
+.row .column .detailCard {
+	max-height: 300px;
+	max-width: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#mountaineer, #everydayLeash, #retractLeash, #collar, #rope, #waterCooler, #weekendTote {
+ 	height: 65%;
+ 	width: 65%;
+ 	display: block;
+ 	}
+
+ #dogPlush, #treatDispenser,  #foodStorage {
+ 	height: 65%;
+ 	width: 55%;
+ 	display: block;
+ }
+
+ #trailHead{
+ 	height: 60%;
+ 	width: 60%;
+ 	display: block;
+ }
+
+/* Create three equal columns that sits next to each other */
+.column {
+ 	flex: 33.3%;
+ 	max-width: 33.3%;
+}
+
+.column img {
+ 	margin-top: 10%;
+ 	vertical-align: middle;
+ 	width: 100%;
+}
+
+/*Styling Hover on All Products Page*/
+.detailCard{
+  	visibility: visible;
+    opacity: 0.8;
+
+}
+.detailCard:hover {
+  	visibility: visible;
+    opacity: 1;
+
+}
+
+/*Styling Images and Text on Product Detail Page*/
+
+.prodDetails{
+ 	margin: 2%;
+ 	flex: 50%;
+ }
+
+.prodDetails img {
+ 	margin-top: 5%;
+ 	vertical-align: middle;
+ 	width: 50%;
+}
+
+#dogModel{
+	width: 500px;
+}
+
+.gallery {
+	margin-left: 23%;
+}
+
+#dot1 {
+	height: 15px; 
+	width: 15px; 
+	border: 1px solid #513B41;
+	background-color: #513B41;
+	border-radius: 50%; 
+	display: inline-block;
+}
+
+.dot {
+	height: 15px; 
+	width: 15px; 
+	border: 1px solid #513B41;
+	border-radius: 50%; 
+	display: inline-block;
+}
+
+.detailText {
+	color: #513B41;
+	float: right;
+	margin-right: 8%;
+	margin-top: 2%;
+}
+
+#productName {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+#productPrice {
+	font-size: 36px;
+}
+
+#color1, #color2, #color3, #color4 {
+	height: 75px; 
+	width: 75px; 
+	border-radius: 50%; 
+	display: inline-block;
+	margin: 2%;
+}
+
+#color1 {
+	background-color: #298879;
+}
+
+#color2 {
+	background-color: #F2D84A;
+}
+
+#color3 {
+	background-color: #E68040;
+}
+
+#color4 {
+	background-color: #A22B99;
+}
+
+#tiny, #small, #medium, #large  {
+	height: 55px; 
+	width: 55px; 
+	display: inline-block;
+	margin: 2%;
+	border: 1px solid #513B41;
+	text-align: center;
+}
+
+#medium1 {
+	height: 55px; 
+	width: 55px; 
+	display: inline-block;
+	margin: 2%;
+	border: 1px solid #513B41;
+	text-align: center;
+	background-color: #513B41;
+	color: #FFFFFF;
+}
+
+.sizeOptions {
+	font-size: 36px;
+}
+
+#sizingChart {
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+#quantity {
+	height: 55px; 
+	width: 55px; 
+	display: inline-block;
+	margin: 2%;
+	border: 1px solid #513B41;
+	text-align: center;
+}
+}
+
+/*Styling Form*/
+
+.form{
+	width: 450px;
+	font-size: 16px;
+	padding: 30px 30px 15px 30px;
+}
+
+.form input[type=submit],
+.form input[type=button],
+.form input[type=text],
+.form input[type=email],
+.form textarea,
+.form label
+{
+	font-family: "Montserrat";
+	font-size: 16px;
+	color: #FFFFFF;
+	margin-left: 20%;
+	margin-top: 1%;
+
+}
+
+.form label {
+	display:block;
+	margin-bottom: 10px;
+}
+
+
+.form input[type=text],
+.form input[type=email] 
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed #FFFFFF;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+}
+
+.form textarea{
+	font-style: italic;
+	padding: 0px 0px 0px 0px;
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px dashed #FFFFFF;
+	width: 275px;
+	overflow: hidden;
+	resize:none;
+	height:20px;
+}
+
+.form textarea:focus, 
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form input[type=email] :focus
+{
+	border-bottom: 1px dashed #FFFFFF;
+}
+
+.form input[type=submit],
+.form input[type=button]{
+	background-color: #F83839;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: "Montserrat";
+	font-size: 16px;
+	padding: 20px 50px;
+	border-color: #F83839;
+	border-radius: 50px;
+}
+
+
+
+
+

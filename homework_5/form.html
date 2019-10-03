@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="redPage">
+	 <!-- Creating the Top Navigation Bar -->
+	<a href="index.html"><img id="logo" src="./images/animal-paw-print.png"></a>
+	<div class="topNav">
+		<a><img id="shoppingCart" src="./images/shopping-cart.png"></a>
+		<a><img id="searchIcon" src="./images/magnifying-glass.png"></a>
+		<a id="shop" href="shop.html">Shop</a>
+		<a id="about">About</a>
+	</div>
+
+	<div class="description">
+	<!-- Creating the back arrow keys -->
+		<div class="back">
+			<a href="index.html"><p> < Back to Home </p></a>
+		</div>
+		<h2> Tell us about your furry friend:</h2>
+	</div>
+
+	<div>
+		<!-- Creating a form that requires users to input specs about their pet -->
+		<form class="form" action="customization.html">
+			<label for="nameEntry">
+				<input placeholder="Name" type="text" name="field1" required="true"/>
+				<span>is a </span>
+			</label>
+			<label for="ageEntry">
+				<input placeholder="Age" type="text" name="field2" required="true"/>
+				<span>old</span>
+			</label>
+			<label for="breedEntry">
+				<input placeholder="Breed" type="text" name="field3" required="true"/>
+				<span>that weights</span>
+			</label>
+			<label for="weightEntry">
+				<input placeholder="Weight" type="text" name="field3" required="true"/>
+				<span>pounds.</span>
+			</label>
+
+			<label>
+				<span> </span><input type="submit" value="BEGIN CUSTOMIZATION"/>
+			</label>
+	</form>
+
+</body>
+</html>
