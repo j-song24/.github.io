@@ -1,0 +1,1 @@
+I created a new shopping cart page. In addition, on the product detail page, I added customization features (color, size, quantity). When the color or size is selected, the selection is indicated next to the text "Color:" and "Size:" respectively. When clicking on "Add to Cart," the counter on the top banner next to the shopping cart icon increases. 

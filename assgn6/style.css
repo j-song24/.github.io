@@ -432,6 +432,7 @@ button {
 	float: left;
 }
 
+/*Creating and styling a card in the shopping cart page*/
 .cartCard{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 600px;
@@ -461,6 +462,14 @@ button {
 
 }
 
+#exitButton {
+	width: 20px;
+	height: auto;
+	float: right;
+	margin: 5%;
+}
+
+/*Quantity Increase and Decrease Buttons*/
 .quantityDec{
 	height: 20px; 
 	width: 25px; 
@@ -495,7 +504,7 @@ button {
 	opacity: 1;
 }
 
-
+/*Shopping Cart Title Text on the left hand side*/
 #cartLeftText {
 	width: 400px;
 	height: auto;
@@ -507,11 +516,13 @@ button {
 
 }
 
+/*Shopping Cart back link on the left hand side*/
 .back {
 	font-size: 16px;
 	font-weight: normal;
 }
 
+/*Styling Order Summary Text*/
 .orderSummaryLeft {
 	width: 150px;
 	text-align: left;
@@ -537,10 +548,12 @@ button {
 	float: right;
 }
 
+/*Styling checkout button*/
 #checkoutBtn{
 	float: right;
 }
 
+/*Styling Cart Counter On Banner*/
 #counter {
 	color: #F83839;
 	font-size: 24px;
