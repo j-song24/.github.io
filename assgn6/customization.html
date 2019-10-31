@@ -5,6 +5,8 @@
 <link rel="stylesheet" type="text/css" href="style.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <!-- javascript -->
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body class="whitePage">
@@ -33,25 +35,24 @@
 				<p> Product Description </p>
 				<p>The daily harness is a sturdy, comfortable harness for your dog. The <br> daily harness is best made for walking your dog at the park and <br> around the neighborhood. Made from a premium and water <br> resistant mesh material that keeps your dog cool. A strap is located <br> at the bottom and allows for adjustment around the belly for a <br> custom fit.</p>
 				<div class="colorOptions">
-					<p> Color: </p>
-					<span id="color1"></span>
-					<span id="color2"></span>
-					<span id="color3"></span>
-					<span id="color4"></span>
+					<p id="selecColorTxt"> Color: </p>
+					<span id="Teal" class="color" onclick="colorSelector1()"></span>
+					<span id="Yellow" class="color" onclick="colorSelector2()"></span>
+					<span id="Orange" class="color" onclick="colorSelector3()"></span>
+					<span id="Magenta" class="color" onclick="colorSelector4()"></span>
 					<span id="cartItems"></span>
 				</div>
 
-				<p> Size: </p>
+				<p id="selecSizeTxt"> Size: </p>
 				<div class="sizeOptions">
-					<span id="tiny"><span>T</span></span>
-					<span id="small"><span>S</span></span>
-					<span id="medium1"><span>M</span></span>
-					<span id="large"><span>L</span></span>
+					<span id="Tiny" class="size" onclick="sizeSelector1()"><span>T</span></span>
+					<span id="Small" class="size" onclick="sizeSelector2()"><span>S</span></span>
+					<span id="Medium" class="size" onclick="sizeSelector3()"><span>M</span></span>
+					<span id="Large" class="size" onclick="sizeSelector4()"><span>L</span></span>
 				</div>
 
 				<p id="sizingChart">Sizing Chart</p>
-				<p> Quantity: </p>
-					<span id="quantity"></span>
+				<p id="quantDisplay"> Quantity: </p>
 
 		<!-- Add to Cart Button -->
 			<div class="hpButton">

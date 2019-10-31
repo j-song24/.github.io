@@ -449,6 +449,7 @@ button {
 	font-weight: bold;
 	font-size: 16px;
 	text-align: left;
+	margin-top: 15%;
 }
 
 .cartCardRightTxt {
@@ -461,7 +462,7 @@ button {
 
 }
 
-#exitButton {
+.exit {
 	width: 20px;
 	height: auto;
 	float: right;
@@ -505,10 +506,9 @@ button {
 
 /*Shopping Cart Title Text on the left hand side*/
 #cartLeftText {
-	width: 400px;
 	height: auto;
 	float: left;
-	margin: 10%;
+	margin-right: 2%;
 	font-size: 36px;
 	font-weight: bold;
 	border-right: 1px solid #513B41;
@@ -539,12 +539,11 @@ button {
 }
 
 .orderDetailsCard {
-	max-width: 600px;
-	margin-top: 3%;
-	margin-right: 2%;
+	max-width: 400px;
+	height: 400px;
+	margin-left: 2%;
+	margin-top: 2%
 	text-align: center;
-	background-color: #f1f1f1;
-	float: right;
 }
 
 /*Styling checkout button*/
@@ -562,3 +561,12 @@ button {
 	text-decoration: none;
 }
 
+.columnCart {
+	width: 50%;
+	float: left;
+	display: flex
+}
+
+#shopCartTxt {
+	margin-right: 2%;
+}

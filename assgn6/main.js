@@ -1,71 +1,71 @@
 // Creating a color selector
 
 // setting variables selected as empty string
-var selected = ""
+var color = ""
 
 function colorSelector1() {
 	// If the color is already teal, clicking it again will remove the border 
-	if (selected == "Teal") {
-		document.getElementById(selected).classList.remove("selectedColor");
+	if (color == "Teal") {
+		document.getElementById(color).classList.remove("selectedColor");
 		// Adding text to the HTML page that indicates the color selected
-		selected = ""
+		color = ""
 		document.getElementById("selecColorTxt").innerHTML = `Color:`;
 		// if selected is any other color, remove it and add it to the color that is clicked on
 	} else {
-		if (selected != "") {
-			document.getElementById(selected).classList.remove("selectedColor");
+		if (color != "") {
+			document.getElementById(color).classList.remove("selectedColor");
 		}
-		selected = "Teal"
-		document.getElementById(selected).classList.add("selectedColor");
-		document.getElementById("selecColorTxt").innerHTML = `Color: ${selected}`;
+		color = "Teal"
+		document.getElementById(color).classList.add("selectedColor");
+		document.getElementById("selecColorTxt").innerHTML = `Color: ${color}`;
 	}
 }
 
 // Same process for these color selectors, one for each color option
 function colorSelector2() {
-	if (selected == "Yellow") {
-		document.getElementById(selected).classList.remove("selectedColor");
-		selected = ""
+	if (color == "Yellow") {
+		document.getElementById(color).classList.remove("selectedColor");
+		color = ""
 		document.getElementById("selecColorTxt").innerHTML = `Color:`;
 	} else {
-		if (selected != "") {
-			document.getElementById(selected).classList.remove("selectedColor");
+		if (color != "") {
+			document.getElementById(color).classList.remove("selectedColor");
 		}
-		selected = "Yellow"
-		document.getElementById(selected).classList.add("selectedColor");
-		document.getElementById("selecColorTxt").innerHTML = `Color: ${selected}`;
+		color = "Yellow"
+		document.getElementById(color).classList.add("selectedColor");
+		document.getElementById("selecColorTxt").innerHTML = `Color: ${color}`;
 	}
 }
 
 // Same process for these color selectors, one for each color option
 function colorSelector3() {
-	if (selected == "Orange") {
-		document.getElementById(selected).classList.remove("selectedColor");
-		selected = ""
+	if (color == "Orange") {
+		document.getElementById(color).classList.remove("selectedColor");
+		color = ""
 		document.getElementById("selecColorTxt").innerHTML = `Color:`;
 	} else {
-		if (selected != "") {
-			document.getElementById(selected).classList.remove("selectedColor");
+		if (color != "") {
+			document.getElementById(color).classList.remove("selectedColor");
 		}
-		selected = "Orange"
-		document.getElementById(selected).classList.add("selectedColor");
-		document.getElementById("selecColorTxt").innerHTML = `Color: ${selected}`;
+		color = "Orange"
+		document.getElementById(color).classList.add("selectedColor");
+		document.getElementById("selecColorTxt").innerHTML = `Color: ${color}`;
 	}
 }
 
 // Same process for these color selectors, one for each color option
 function colorSelector4() {
-	if (selected == "Magenta") {
-		document.getElementById(selected).classList.remove("selectedColor");
-		selected = ""
+	if (color == "Magenta") {
+		document.getElementById(color).classList.remove("selectedColor");
+		color = ""
 		document.getElementById("selecColorTxt").innerHTML = `Color:`;
 	} else {
-		if (selected != "") {
-			document.getElementById(selected).classList.remove("selectedColor");
+		if (color != "") {
+			document.getElementById(color).classList.remove("selectedColor");
 		}
-		selected = "Magenta"
-		document.getElementById(selected).classList.add("selectedColor");
-		document.getElementById("selecColorTxt").innerHTML = `Color: ${selected}`;
+		color = "Magenta"
+		document.getElementById(color).classList.add("selectedColor");
+		document.getElementById("selecColorTxt").innerHTML = `Color: ${color}`;
 	}
 }
 
@@ -138,15 +138,38 @@ function sizeSelector4() {
 		document.getElementById("selecSizeTxt").innerHTML = `Size: ${size}`;
 	}
 }
+localStorage.clear()
 
-// Creating a counter for the items added to the cart
-var button = 
-	document.getElementById("counter"),
-	counter = 0; 
-// Adding 1 everytime the "Add to Cart" button is pressed and showing that on the HTML page
+var userItems = JSON.parse(localStorage.getItem("userItems"));
+var idCounter = JSON.parse(localStorage.getItem("idCounter"));
+
+if (userItems == undefined) {
+	localStorage.setItem("userItems", "{}")
+	userItems = {}
+}
+
+if (idCounter == undefined) {
+	localStorage.setItem("idCounter", 0)
+	idCounter = 0
+}
+console.log(userItems)
+document.getElementById("counter").innerHTML = Object.keys(userItems).length;
+
+// 
 function addCart() {
-	counter += 1;
-	document.getElementById("counter").innerHTML = counter;
+	userItems[idCounter] = {
+		color: color,
+		size: size,
+		qty: document.getElementById("quantInput").value
+	};
+	idCounter++;
+	localStorage.removeItem("idCounter")
+	localStorage.setItem("idCounter", idCounter)
+
+	localStorage.removeItem("userItems")
+	localStorage.setItem("userItems",JSON.stringify(userItems));
+	document.getElementById("counter").innerHTML = Object.keys(userItems).length;
+	console.log(userItems)
 }
 
 
