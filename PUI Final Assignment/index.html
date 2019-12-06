@@ -14,12 +14,20 @@
 </head>
 <body>
 
-  <nav class="nav-center" role="navigation">
+<!-- Creeating a upper navigation bar -->
+  <nav id="top" class="nav-center" role="navigation">
     <div class="nav-wrapper container">
         <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html"><img id="logo" src="imgs/logo.png"></a> </li>
-            <li><a href="resume.html">Resume</a></li>
+            <li>
+              <a href="about.html">About</a>
+              </li>
+            <li>
+              <a href="index.html"><img id="logo" src="imgs/logo.png" width="50px">
+                </a> 
+              </li>
+            <li>
+              <a href="resume.html">Resume</a>
+              </li>
         </ul>
     </div>
 </nav>
@@ -27,17 +35,7 @@
 
 <div class="main">
 
-  <div class="sky-container">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  </div>
-
+<!-- Creating the introduction text on the home page, using full width, centered column -->
     <div class="section">
       <div class="container">
         <h3 class="header center main-text">Hi, I'm Jesse Song!</h3>
@@ -46,6 +44,7 @@
               avid star gazer.</h5>
         </div>
 
+<!-- Adding background images and integrating JS library rellax to create parallax scrolling experience. Left planet is scrolling at a faster speed than the right planet. -->
         <img src="imgs/parallax-imgs/astronomy-left.svg" class="planet-left rellax" data-rellax-speed="10"/>
         <img src="imgs/parallax-imgs/astronomy-right.svg" class="planet-right rellax" data-rellax-speed="5"/>
 
@@ -55,17 +54,18 @@
         </div>
       </div>
 
+<!-- A clickable icon that will jump to projects -->
       <div class="row center">
-        <div class="col s12">
-          <img id="star-icon" src="imgs/star.svg"/>
-        </div>
-        <div class="col s12">
-          See projects
-        </div>
+        <a href="#projects">
+          <div class="col s12">
+            <img id="star-icon" src="imgs/star.svg"/>
+          </div>
+          <div class="col s12">
+            See projects
+          </div>
+        </a>
       </div>
-
-    </div>
-    
+    </div> 
  </div>
 
 
@@ -75,13 +75,14 @@
 
       <div class="row">
         <div class="col s12">
-          <h3>Projects</h3>
+          <h3 id="projects">Projects</h3>
         </div>
       </div>
 
+<!-- One row containing a project descrption and an image -->
       <div class="row">
-        <div class="col s12 m7">
-          <a href="#">
+        <div class="col s12 m6">
+          <a href="submeet.html">
             <div class="icon-block">
               <h5 class="">UX Design</h5>
               <h4>Submeet</h4>
@@ -94,24 +95,35 @@
             </div>
           </a>
         </div>
-        <div class="col s12 m5">
-          <div class="icon-block">
-            <img class="project-icon" id="submeetBanner" src="imgs/submeetbannerphoto.png"/>
-            <svg id="morph1" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 1109.8 816.54">
-              <path class="morph1" d="M1171.33,144.78C1283.09,300.94,1064,868.36,639.61,885.9,355.85,897.63,71.51,659.73,91.47,483.71,124.87,189.21,1024.56-60.3,1171.33,144.78Z"></path>
-            </svg>
-          </div>
-        </div>
+        <div class="col s12 m6">
+          <div class="overlapping-1 card-graphics1">
+            <a href="submeet.html">
+              <ul class="grid-container">
+                <li><img id="submeet-cover" src="imgs/submeetbannerphoto.png" alt=""></li>
+                <li><svg id="morph1" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 1109.8 816.54">
+                    <path class="morph1" d="M1171.33,144.78C1283.09,300.94,1064,868.36,639.61,885.9,355.85,897.63,71.51,659.73,91.47,483.71,124.87,189.21,1024.56-60.3,1171.33,144.78Z"></path></svg></li>
+              </ul>
+            </a>
       </div>
+    </div>
+  </div>
+
+<!-- One row containing a project descrption and an image -->
       <br><br><br>
       <div class="row">
-        <div class="col s12 m5">
-          <div class="icon-block">
-            <img class="project-icon" src="imgs/hearsaycover.png" />
-          </div>
-        </div>
-        <div class="col s12 m7">
-          <a href="#">
+        <div class="col s12 m6">
+          <div class="overlapping-2 card-graphics2">
+            <a href="hearsay.html">
+              <ul class="grid-container">
+                <li><img id="hearsay-cover" src="imgs/hearsaycover.png" alt=""></li>
+                <li><svg id="morph2" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 896.46 689.5">
+                    <path class="morph2" d="M849,573c-183.47,125-697.87-233.46-659-359C226.51,96.09,791.5,53.31,902,295,942.6,383.8,926.15,520.41,849,573Z"></path></svg></li>
+              </ul>
+            </a>
+      </div>
+    </div>
+        <div class="col s12 m6">
+          <a href="hearsay.html">
             <div class="icon-block">
               <h5 class="">UX Design</h5>
               <h4>hearsay.</h4>
@@ -125,35 +137,12 @@
         </div>
       </div>
       <br><br><br>
+
+<!-- One row containing a project descrption and an image -->
+
       <div class="row">
-        <div class="col s12 m7">
-          <a href="#">
-            <div class="icon-block">
-              <h5 class="">User Research</h5>
-              <h4>Acoustic Art</h4>
-              <p class="light">
-                A matchmaking app that helps Carnegie Mellon students to find subletters via shared connections
-              </p>
-              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/arrow.svg"/>
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="col s12 m5">
-          <div class="icon-block">
-            <img class="project-icon" src="imgs/UCRE.png" />
-          </div>
-        </div>
-      </div>
-      <br><br><br>
-      <div class="row">
-        <div class="col s12 m5">
-          <div class="icon-block">
-            <img class="project-icon" src="imgs/ATH.png" />
-          </div>
-        </div>
-        <div class="col s12 m7">
-          <a href="#">
+        <div class="col s12 m6">
+          <a href="ATH.html">
             <div class="icon-block">
               <h5 class="">Data Driven Display</h5>
               <h4>Atlantis Transportation Hub</h4>
@@ -165,8 +154,25 @@
             </div>
           </a>
         </div>
+        <div class="col s12 m6 center">
+          <div class="overlapping-3 card-graphics3">
+            <a href="ATH.html">
+              <ul class="grid-container">
+                <li><img id="ATH-cover" src="imgs/ATH.png" alt=""></li>
+                <li><svg id="morph3" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 795.2 535.1">
+                    <path class="morph3" d="M1054.49,301c36.69,116.52-316.87,455.19-588.24,365C148.66,560.5,374.66,40.37,634.2,165.23,876.19,281.64,1032,229.71,1054.49,301Z"></path></svg></li>
+              </ul>
+            </a>
+      </div>
+        </div>
       </div>
       <br><br><br>
+
+    <div class="row center">
+      <div class="col s12">
+          <a href="#top"><p> Back to Top </p></a>
+        </div>
+    </div>   
 
 
 

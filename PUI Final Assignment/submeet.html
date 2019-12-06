@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <nav class="nav-center" role="navigation">
+    <div class="nav-wrapper container">
+        <ul>
+            <li>
+              <a href="about.html">About</a>
+              </li>
+            <li>
+              <a href="index.html"><img id="logo" src="imgs/logo.png" width="50px">
+                </a> 
+              </li>
+            <li>
+              <a href="resume.html">Resume</a>
+              </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="main">
+
+    <div class="section">
+      <div class="container">
+
+        <img src="imgs/parallax-imgs/astronomy-left.svg" class="planet-left rellax" data-rellax-speed="10"/>
+        <img src="imgs/parallax-imgs/astronomy-right.svg" class="planet-right rellax" data-rellax-speed="5"/>
+
+      <div class="row">
+        <h2> Submeet </h2>
+      </div>
+     
+      <div class="row">
+        <div class="col s12 m4">
+            <p> Fall 2019 </p>
+              <h5>Team</h5>
+              <p> Michelle Chen</p>
+              <div class="divider"></div>
+            <h5>Role</h5>
+              <p> User Researcher, UX Designer </p>
+              <div class="divider"></div>
+            <h5>Methods</h5>
+              <p> Semi-Structured Interview, Speed Dating, Storyboarding, Affinity Diagramming </p>
+              <div class="divider"></div>
+            <h5>Skills</h5>
+              <p>Adobe XD</p>
+              <div class="divider"></div>
+            </div>
+
+        <div class="col s12 m8">
+          <img class="col-img" src="imgs/SubmeetScreens.png">
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <p> Every spring, CMU students off-campus are focused on a few things: Carnival, finals and subletting. Countless subletting posts pervade Facebook and Groupme groups. Subletting has always been a persisting endeavor for college students moving out of apartments over the summer. However, homes are tremendoulsy private spaces. <br><br> How do you determine if someone is trustworthy enough to stay at your home? How do you know if the subletter will return your security deposit at the end of your stay? We wanted to find out a better way to pair subletters and subleasers by exploring the theme of trust and verification in our application design. But before we started brainstorming, we wanted to understand how CMU students currently find subletters/subleasers. </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <h4> Who are our Users? </h4>
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="col s12">
+          <img class="col-img" src="imgs/submeet/stakeholders.svg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <h4>Secondary Research - Competitive Analysis</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m9">
+            <img class="col-img" src="imgs/submeet/submeet competitive analysis.png">
+        </div>
+        <div class="col s12 m3">
+          <p>Some of the most important insights we found included:</p>
+            <ul><p class="heading-text">Reach</p> - Some of the website had great features that helped users find listings, but there weren't many users</ul>
+            <ul><p class="heading-text">Trust</p> - Some platforms were considered more trustworthy than others, and therefore users were more likely to use them.</ul>
+            <ul><p class="heading-text">Payment</p> - All platforms except Airbnb did NOT facilitate payment, only communication between subletter and subleaser.</ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <h3> Interviews </h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <p>We then conducted several 1 on 1 interviews to understand how people currently find subletters or subletters. Beyond user journey, we also asked interviewees about their standards regarding trust. Some of the key insights we uncovered included:</p>
+        </div>
+        <div class="col s12 m6 center">
+            <h5>"The experience overall is stressful. I don't want to pay for my apartment if I'm not going to stay there, but I also don't want someone I don't trust staying in my house."</h5>
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col s12 m3">
+          <img class="insight-icons" src="imgs/submeet/frustrated.svg">
+        </div>
+        <div class="col s12 m3">
+          <img class="insight-icons" src="imgs/submeet/friends.svg">
+        </div>
+        <div class="col s12 m3">
+          <img class="insight-icons" src="imgs/submeet/no18.svg">
+        </div>
+        <div class="col s12 m3">
+          <img class="insight-icons" src="imgs/submeet/house.svg">
+        </div>    
+    </div>
+
+    <div class="row">
+        <div class="col s12 m3">
+          <p>If subletters didn't find the right subleaser, they would quit.</p>
+        </div>
+        <div class="col s12 m3">
+          <p>People were more highly likely to sublet from someone they directly knew.</p>
+        </div>
+        <div class="col s12 m3">
+          <p>People were not very likely to sublet to someone 18 and under.</p>
+        </div>
+        <div class="col s12 m3">
+          <p>Subleasers were more focused on physical space and price.</p>
+        </div>    
+    </div>
+
+      <div class="row">
+        <div class="col s12">
+          <h3> User Flows </h3>
+            <p> After our interviews, we got a good glimpse of how subletters and subleasers currently find housing. The two most common methods were word of mouth and digital processes. Looking at the user flows, we noticed that the main drop-out point for both the subleaser and subletter was communication and interviewing. <br>
+            <h5 class="emphasis-text center">This helped reveal a user need that fueled our design decision: Trust </h5><br>
+                    <img src = "imgs/submeet/digitalsubletter.png" alt = "digital user flow for subletter" width="100%" height="100%">
+                    <img src = "imgs/submeet/digitalsubleaser.png" alt = "digital user flow for subleaser" width="100%" height="100%">
+                    <img src = "imgs/submeet/womsubletter.png" alt = "word of mouth user flow for subletter" width="100%" height="100%">
+                    <img src = "imgs/submeet/womsubleaser.png" alt = "word of mouth user flow for subleaser" width="100%" height="100%">
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col s12 m6">
+          <h3> Mind Mapping </h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m3">
+            <p> Organizing the information we received from our interviews, we created a mindmap. First brainstorming all relevant topics on post-it notes. We then grouped these notes into specific categories: starting narrow and then expanding to broad thematic categories like "Verification." This brought to light two main categories of verification: physical verification and social verification.</p><br>
+        </div>
+        <div class="col s12 m9">
+            <img src = "imgs/submeet/Subletter Verfication Model.png" alt = "Mind Map of Subletter Space" width="100%" height="100%">
+        </div>
+      </div>
+
+    <div class="row center">
+        <div class="col s12">
+          <h5> Our mind mapping session validated trust as a primary user need.</h5>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col s12 m6">
+          <h3> UI Process </h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m9">
+          <img class="col-img" src ="imgs/submeet/UIGuide.png" alt="color and font guide for UI design">
+        </div>
+        <div class="col s12 m3">
+            <p> Playing around with colors until we found the perfect match. We chose to incorporate sans serif fonts for a sleeker, more readable look.</p>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col s12">
+          <h3> Lo-Fi Prototypes </h3>
+            <p>We quickly sketched screens - detailling the subletter path and the subleaser path. The purple posted notes on the screens include written feedback and changes we received from user testing.</p>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <img class="col-img" src="imgs/submeet/lofisubmeet.png" alt="low fidelity paper screens with annotated notes">
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+          <h3> User Testing </h3>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m7">
+        <img class="col-img" src="imgs/submeet/UserInsights.svg" alt="user insights and accompanying design change">
+        </div>
+      <div class="col s12 m5">
+        <p>After creating the low fidelity screens, we asked a few users to test the usability of our application through a task-based think aloud protocol. Through user testing, we learned a few insights that helped us when creating high fidelity mockups.</p>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+          <h3> High Fidelity Prototype </h3>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+          <p>Applying the feedback we got from users, we created an onboarding process and two different modes: one for subletters and one for subleasers.</p>
+        </div>
+    </div>
+    <div class="row center">
+      <div class="col s12 m4">
+          <video width="244" height="528" controls playsinline>
+            <source src="imgs/submeet/OnboardingPt1.mp4" type="video/mp4">
+              <p>Your browser doesn't support HTML5 video. Here is
+                a <a href="imgs/submeet/OnboardingPt1.mp4">link to the video</a> instead.</p>
+                </video>
+        </div>
+        <div class="col s12 m4">
+          <video width="244" height="528" controls playsinline>
+            <source src="imgs/submeet/OnboardingPt3.mp4" type="video/mp4">
+              <p>Your browser doesn't support HTML5 video. Here is
+                 a <a href="imgs/submeet/OnboardingPt3.mp4">link to the video</a> instead.</p>
+            </video>
+          </div>
+        <div class="col s12 m4">
+          <video width="244" height="528" controls playsinline>
+            <source src="imgs/submeet/OnboardingPt2.mp4" type="video/mp4">
+              <p>Your browser doesn't support HTML5 video. Here is
+                a <a href="imgs/submeet/OnboardingPt2.mp4">link to the video</a> instead.</p>
+          </video>
+        </div>
+    </div>
+
+    <br>
+    <div class="row center">
+      <div class="col s12">
+          <a href="index.html"><p> Back to Projects </p></a>
+        </div>
+    </div>   
+  </div>
+</div>
+</div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -6,9 +6,35 @@
  * Made By MaterializeCSS.com
  */
 
+ /*Creating smooth scrolling anchor links when jumping from one part of html page the another point on the same page*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Setting standard color, font, spacing*/
 body {
   background-color: #FDF9F2;
   font-family: 'Roboto', sans-serif;
+}
+
+.main-text {
+  color: #212529;
+}
+
+h5 {
+  line-height: 2.5rem;
+}
+
+#footer-div {
+  text-align: center;
+}
+
+a {
+  color: #212529;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 nav ul a,
@@ -33,6 +59,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -62,199 +89,49 @@ nav.nav-center ul li a {
   box-shadow: none;
 }
 
-#logo {
-  max-width: 5%;
+/*Adding more classes of headings, dividers, indentations*/
+.divider {
+  height: 1px;
+  background-color: #FF885f;
 }
 
+.heading-text {
+  font-size: 16px;
+  color: #FF885f;
+  font-weight: bolder;
+}
+
+.emphasis-text{
+  font-weight: bolder;
+}
+
+.col-img {
+  max-width: 100%;
+}
+
+.indented-text {
+  text-indent: 2rem;
+}
+
+.takeaway-text {
+  font-size: 20px;
+  color: #dd5533;
+  line-height: 2.5rem;
+}
+
+
+/*Styling on index.html*/
+
+/*Readjusting sizes of the star icon and profile image on the index page*/
 #star-icon {
   max-width: 4%;
-}
-
-.main-text {
-  color: #212529;
-}
-
-h5 {
-  line-height: 2.5rem;
 }
 
 #portfolio-pic {
   max-width: 35%;
 }
 
-#footer-div {
-  text-align: center;
-}
-
-a {
-  color: #212529;
-}
-
-.project-icon {
-  position: absolute;
-  width: 25%;
-  margin-top: 1%;
-  margin-right: 1%;
-  margin-left: 1%;
-  margin-bottom: 1%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-.sky-container {
-  z-index: -2;
-  position: sticky;
-  width: auto;
-  height: auto;
-/*  background: linear-gradient(125deg, #212529 0%, #00103a 100%);
-  clip-path: circle(50% at 50% 50%);
-  border-radius: 50%;*/
-  transform: rotateZ(45deg);
-}
-
-
-.star {
-  position: absolute;
-  opacity: 80%;
-  top: 50%;
-  left: 50%;
-  height: 2px;
-  background: linear-gradient(-45deg, #FFCC90, rgba(0, 0, 255, 0));
-  filter: drop-shadow(0 0 6px #FF885F);
-  animation: tail 3000ms ease-in-out infinite, shooting 6000ms ease-in-out infinite;
-}
-
-.star::before, .star::after {
-  position: absolute;
-  content: '';
-  top: calc(50% - 1px);
-  right: 0;
-  height: 2px;
-  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #FFCC90, rgba(0, 0, 255, 0));
-  border-radius: 100%;
-  transform: translateX(50%) rotateZ(45deg);
-  animation: shining 3000ms ease-in-out infinite;
-}
-
-.star::after {
-  transform: translateX(50%) rotateZ(-45deg);
-}
-
-.star:nth-child(1) {
-  top: calc(400px);
-  left: calc(400px);
-  animation-delay: 650ms;
-}
-.star:nth-child(1)::before, .star:nth-child(1)::after {
-  animation-delay: 650ms;
-}
-
-.star:nth-child(2) {
-  top: calc(50% - -90px);
-  left: calc(50% - 200px);
-  animation-delay: 1600ms;
-}
-.star:nth-child(2)::before, .star:nth-child(2)::after {
-  animation-delay: 1600ms;
-}
-
-.star:nth-child(3) {
-  top: calc(50% - -590px);
-  left: calc(50% - 100px);
-  animation-delay: 2100ms;
-}
-.star:nth-child(3)::before, .star:nth-child(3)::after {
-  animation-delay: 2100ms;
-}
-
-.star:nth-child(4) {
-  top: calc(50% - -800px);
-  left: calc(50% - 800px);
-  animation-delay: 1700ms;
-}
-.star:nth-child(4)::before, .star:nth-child(4)::after {
-  animation-delay: 1700ms;
-}
-
-.star:nth-child(5) {
-  top: calc(50% - 300px);
-  left: calc(50% - 300px);
-  animation-delay: 500ms;
-}
-.star:nth-child(5)::before, .star:nth-child(5)::after {
-  animation-delay: 500ms;
-}
-
-.star:nth-child(6) {
-  top: calc(50% - 500px);
-  left: calc(50% - 500px);
-  animation-delay: 1000ms;
-}
-.star:nth-child(6)::before, .star:nth-child(6)::after {
-  animation-delay: 1000ms;
-}
-
-.star:nth-child(7) {
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
-  animation-delay: 1100ms;
-}
-.star:nth-child(7)::before, .star:nth-child(7)::after {
-  animation-delay: 100ms;
-}
-
-.star:nth-child(8) {
-  top: calc(50% - -850px);
-  left: calc(50% - 850px);
-  animation-delay: 1000ms;
-}
-.star:nth-child(8)::before, .star:nth-child(8)::after {
-  animation-delay: 1000ms;
-}
-
-
-
-
-/* Animations */
-@keyframes tail {
-  0% {
-    width: 0;
-  }
-  
-  30% {
-    width: 100px;
-  }
-  
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes shining {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 30px;
-  }
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes shooting {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(800px);
-  }
-}
-
-/*Parallax Scrolling*/
+/*Positioning and adjusting Parallax Scrolling images*/
 img.planet-left.rellax {
   max-width: 40%;
   position: absolute;
@@ -356,19 +233,161 @@ img.planet-right.rellax {
   animation-iteration-count: 1;
 }
 
-/*Creating a morphing shape*/
+/*Index.html overlaying SVG and PNG using CSS Grid*/
+/*styling a morphing shape for each of the projects on the home page*/
 #morph1 {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   fill: #8ae2e0;
   opacity: 0.6;
-  position: relative;
   z-index: -1;  
   overflow: visible;
 }
 
+#morph2 {
+  max-width: 100%;
+  max-height: 100%;
+  fill: #e9625b;
+  opacity: 0.08;
+  z-index: -1;  
+  overflow: visible;
+}
+
+#morph3 {
+  max-width: 100%;
+  max-height: 100%;
+  fill: #f0eddf;
+  opacity: 0.50;
+  z-index: -1;  
+  overflow: visible;
+}
+
+/*Adjusting size of project photos*/
+#hearsay-cover {
+  max-width: 150%;
+}
+
+#submeet-cover {
+  max-width: 100%;
+}
+
+#ATH-cover {
+  max-width: 150%;
+}
+
+/*Overlapping Grid for Submeet*/
+
+.overlapping-1 ul {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    max-width: 600px;
+}
+
+.overlapping-1 li:nth-child(1) {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 2;
+    z-index: 2;
+}
+
+.overlapping-1 li:nth-child(2) {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 4;
+}
+
+/*Overlapping Grid for hearsay*/
+
+.overlapping-2 ul {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    max-width: 600px;
+}
+
+.overlapping-2 li:nth-child(1) {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 2;
+    z-index: 2;
+}
+
+.overlapping-2 li:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 3;
+}
+
+/*Overlapping Grid for ATH*/
+
+.overlapping-3 ul {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    max-width: 600px;
+}
+
+.overlapping-3 li:nth-child(1) {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 2;
+    z-index: 2;
+}
+
+.overlapping-3 li:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 3;
+}
+
+/*Styling in About.html*/
+
+/*styling the headshot in about.html*/
 #about-photo {
   max-width: 100%;
 }
+
+/*Styling for Submeet Project in Submeet.html*/
+
+/*Submeet Photos*/
+#user-groups {
+  max-width: 50%;
+}
+
+.insight-icons{
+  max-width: 80%;
+}
+
+
+/*Styling for ATH Project in ATH.html*/
+
+/*ATH photo and vdeo adjustment*/
+#ATH-img {
+  max-width: 150%;
+}
+
+#PTF-vid {
+  margin-top: -10%;
+}
+
+#motion-vid {
+  margin-top: -20%;
+}
+
+.stakeholder-img {
+  max-width: 50%;
+}
+
+#currentState {
+  max-width: 80%;
+}
+
+/*Styling for hearsay Project in hearsay.html*/
+
+
+
+/*When resizing the home page, the information will be presented image first and the text*/
+
+
+
+
+
+
+
+
+
+
 
 
