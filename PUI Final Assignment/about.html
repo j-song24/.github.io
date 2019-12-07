@@ -14,38 +14,28 @@
 </head>
 <body>
 
-  <nav class="nav-center" role="navigation">
-    <div class="nav-wrapper container">
-        <ul>
-            <li>
-              <a href="about.html">About</a>
-              </li>
-            <li>
-              <a href="index.html"><img id="logo" src="imgs/logo.png" width="50px">
-                </a> 
-              </li>
-            <li>
-              <a href="resume.html">Resume</a>
-              </li>
-        </ul>
-    </div>
-</nav>
-
-
 <div class="main">
+  <!-- Creating a fixed upper navigation bar -->
+  <div class="navbar-fixed">
+    <nav class="nav-center" role="navigation">
+      <div class="nav-wrapper container">
+          <ul>
+              <li>
+                <a href="about.html">About</a>
+                </li>
+              <li>
+                <a href="index.html"><img id="logo" src="imgs/home-imgs/logo.png" width="50px">
+                  </a> 
+                </li>
+              <li>
+                <a href="resume.html">Resume</a>
+                </li>
+          </ul>
+      </div>
+  </nav>
+</div>
 
-  <div class="sky-container">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  </div>
-
-    <div class="section">
+    <div id="about-section" class="section">
       <div class="container">
 
         <img src="imgs/parallax-imgs/astronomy-left.svg" class="planet-left rellax" data-rellax-speed="10"/>
@@ -53,27 +43,35 @@
 
       <div class="row">
         <div class="col s12 m6">
-          <a href="#">
             <div class="icon-block">
               <h4>Hi, I'm Jesse!</h4>
 
               <p class="light">
                 I am currently a junior at Carnegie Mellon University studying Business Administration and Human Computer Interaction. I’m passionate about solving problems about people for people. I use my interdisciplinary lens to not only analyze logical solutions, but craft delightful experiences.
               </p>
+
+              <h5> Let's Chat!</h5>
+              <a href="mailto:jessesong24@gmail.com">
+                <p>
+                  <span id="email-text"> jessesong24@gmail.com
+                  </span>
+                  <img id="small-arrow" class="hvr-wobble-horizontal" src="imgs/about-imgs/email-arrow.svg"/>
+              </p>
+                </p>
+              </a>
             </div>
-          </a>
         </div>
         <div class="col s12 m6">
-          <div class="icon-block">
-            <img id="about-photo" src="imgs/about-photo.png"/>
-            </svg>
+          <div class="overlapping-about">
+              <ul class="grid-container">
+                <li><img id="about-photo" src="imgs/about-imgs/about-photo.png" alt=""></li>
+                <li><img id="about-blob" src="imgs/about-imgs/about-blob.svg"></li>
+              </ul>
           </div>
-        </div>
       </div>
-
     </div>
-    
- </div>
+  </div>
+</div>
 </div>
 
 

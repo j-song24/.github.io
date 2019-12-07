@@ -14,34 +14,35 @@
 </head>
 <body>
 
-<!-- Creeating a upper navigation bar -->
-  <nav id="top" class="nav-center" role="navigation">
-    <div class="nav-wrapper container">
-        <ul>
-            <li>
-              <a href="about.html">About</a>
-              </li>
-            <li>
-              <a href="index.html"><img id="logo" src="imgs/logo.png" width="50px">
-                </a> 
-              </li>
-            <li>
-              <a href="resume.html">Resume</a>
-              </li>
-        </ul>
-    </div>
-</nav>
-
 
 <div class="main">
+  <!-- Creating a fixed upper navigation bar -->
+  <div class="navbar-fixed">
+    <nav class="nav-center" role="navigation">
+      <div class="nav-wrapper container">
+          <ul>
+              <li>
+                <a href="about.html">About</a>
+                </li>
+              <li>
+                <a href="index.html"><img id="logo" src="imgs/home-imgs/logo.png" width="50px">
+                  </a> 
+                </li>
+              <li>
+                <a href="resume.html">Resume</a>
+                </li>
+          </ul>
+      </div>
+  </nav>
+</div>
 
 <!-- Creating the introduction text on the home page, using full width, centered column -->
     <div class="section">
       <div class="container">
-        <h3 class="header center main-text">Hi, I'm Jesse Song!</h3>
+        <h3 class="header center main-text">Hi, I'm <mark>Jesse Song!</mark></h3>
         <div class="row center">
-          <h5 class="header col s12 main-text">I am a multifaceted UX designer, ultimate frisbee enthusiast and <br>
-              avid star gazer.</h5>
+          <h5 class="header col s12 main-text">I am a multifaceted <span class="underline">UX designer</span>, <span class="underline">ultimate frisbee enthusiast</span> and <br>
+              <span class="underline">avid star gazer.</span></h5>
         </div>
 
 <!-- Adding background images and integrating JS library rellax to create parallax scrolling experience. Left planet is scrolling at a faster speed than the right planet. -->
@@ -50,7 +51,7 @@
 
       <div class="row center">
         <div class="col s12">
-          <img id="portfolio-pic" src="imgs/Portfolio Photo.png"/>
+          <img id="portfolio-pic" src="imgs/home-imgs/Portfolio Photo.png"/>
         </div>
       </div>
 
@@ -58,7 +59,7 @@
       <div class="row center">
         <a href="#projects">
           <div class="col s12">
-            <img id="star-icon" src="imgs/star.svg"/>
+            <img id="star-icon" src="imgs/home-imgs/star.svg"/>
           </div>
           <div class="col s12">
             See projects
@@ -80,8 +81,8 @@
       </div>
 
 <!-- One row containing a project descrption and an image -->
-      <div class="row">
-        <div class="col s12 m6">
+      <div class="row flex-s">
+        <div class="col s12 m6 order-2">
           <a href="submeet.html">
             <div class="icon-block">
               <h5 class="">UX Design</h5>
@@ -90,16 +91,16 @@
               <p class="light">
                 A matchmaking app that helps Carnegie Mellon students to find subletters via shared connections
               </p>
-              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/arrow.svg"/>
+              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/home-imgs/arrow.svg"/>
               </p>
             </div>
           </a>
         </div>
-        <div class="col s12 m6">
+        <div class="col s12 m6 order-1">
           <div class="overlapping-1 card-graphics1">
             <a href="submeet.html">
               <ul class="grid-container">
-                <li><img id="submeet-cover" src="imgs/submeetbannerphoto.png" alt=""></li>
+                <li><img id="submeet-cover" src="imgs/home-imgs/submeetbannerphoto.png" alt=""></li>
                 <li><svg id="morph1" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 1109.8 816.54">
                     <path class="morph1" d="M1171.33,144.78C1283.09,300.94,1064,868.36,639.61,885.9,355.85,897.63,71.51,659.73,91.47,483.71,124.87,189.21,1024.56-60.3,1171.33,144.78Z"></path></svg></li>
               </ul>
@@ -110,19 +111,19 @@
 
 <!-- One row containing a project descrption and an image -->
       <br><br><br>
-      <div class="row">
-        <div class="col s12 m6">
+    <div class="row flex-s">
+        <div class="col s12 m6 order-1">
           <div class="overlapping-2 card-graphics2">
             <a href="hearsay.html">
               <ul class="grid-container">
-                <li><img id="hearsay-cover" src="imgs/hearsaycover.png" alt=""></li>
+                <li><img id="hearsay-cover" src="imgs/home-imgs/hearsaycover.png" alt=""></li>
                 <li><svg id="morph2" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 896.46 689.5">
                     <path class="morph2" d="M849,573c-183.47,125-697.87-233.46-659-359C226.51,96.09,791.5,53.31,902,295,942.6,383.8,926.15,520.41,849,573Z"></path></svg></li>
               </ul>
             </a>
       </div>
     </div>
-        <div class="col s12 m6">
+        <div class="col s12 m6 order-2">
           <a href="hearsay.html">
             <div class="icon-block">
               <h5 class="">UX Design</h5>
@@ -130,18 +131,18 @@
               <p class="light">
                 An application that fosters social connection between local artists and local concertgoers
               </p>
-              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/arrow.svg"/>
+              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/home-imgs/arrow.svg"/>
               </p>
             </div>
           </a>
         </div>
-      </div>
+    </div>
       <br><br><br>
 
 <!-- One row containing a project descrption and an image -->
 
-      <div class="row">
-        <div class="col s12 m6">
+      <div class="row flex-s">
+        <div class="col s12 m6 order-2">
           <a href="ATH.html">
             <div class="icon-block">
               <h5 class="">Data Driven Display</h5>
@@ -149,16 +150,16 @@
               <p class="light">
                 A gesture-based digital transportation display that revolves around the theme of flexibility, customizability and itinerary planning
               </p>
-              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/arrow.svg"/>
+              <p class="hvr-wobble-horizontal"> Read More <img class="hvr-wobble-horizontal" src="imgs/home-imgs/arrow.svg"/>
               </p>
             </div>
           </a>
         </div>
-        <div class="col s12 m6 center">
+        <div class="col s12 m6 order-1">
           <div class="overlapping-3 card-graphics3">
             <a href="ATH.html">
               <ul class="grid-container">
-                <li><img id="ATH-cover" src="imgs/ATH.png" alt=""></li>
+                <li><img id="ATH-cover" src="imgs/home-imgs/ATH.png" alt=""></li>
                 <li><svg id="morph3" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 795.2 535.1">
                     <path class="morph3" d="M1054.49,301c36.69,116.52-316.87,455.19-588.24,365C148.66,560.5,374.66,40.37,634.2,165.23,876.19,281.64,1032,229.71,1054.49,301Z"></path></svg></li>
               </ul>

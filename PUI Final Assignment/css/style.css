@@ -131,6 +131,11 @@ nav.nav-center ul li a {
   max-width: 35%;
 }
 
+/*Creating an underline*/
+.underline {
+  border-bottom: 5px solid #FFCC90;
+}
+
 /*Positioning and adjusting Parallax Scrolling images*/
 img.planet-left.rellax {
   max-width: 40%;
@@ -145,6 +150,11 @@ img.planet-right.rellax {
   top: 100px;
   right: 0;
   z-index: -1;
+}
+
+/*Highlighting "Jesse Song" on home page*/
+mark {
+  background-color: #FFE0AE;
 }
 
 /*Arrow horizonatal wobble on hover*/
@@ -323,7 +333,7 @@ img.planet-right.rellax {
 
 .overlapping-3 li:nth-child(1) {
     grid-row: 1 / span 2;
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
     z-index: 2;
 }
 
@@ -337,6 +347,44 @@ img.planet-right.rellax {
 /*styling the headshot in about.html*/
 #about-photo {
   max-width: 100%;
+}
+
+/*Adding margins to the top of the page*/
+#about-section {
+  padding-top: 10rem;
+}
+
+/*Creating style for email link*/
+#email-text {
+  color: #FF885F;
+  border-bottom: 5px solid #FF885F;
+  font-size: 24px;
+}
+
+#small-arrow {
+  max-width: 10%;
+}
+
+#about-blob {
+  max-height: 110%;
+}
+/*Overlapping Grid for headshot*/
+
+.overlapping-about ul {
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    max-width: 600px;
+}
+
+.overlapping-about li:nth-child(1) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    z-index: 2;
+}
+
+.overlapping-about li:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
 }
 
 /*Styling for Submeet Project in Submeet.html*/
@@ -358,7 +406,7 @@ img.planet-right.rellax {
   max-width: 150%;
 }
 
-#PTF-vid {
+#mov-vid {
   margin-top: -10%;
 }
 
@@ -375,12 +423,25 @@ img.planet-right.rellax {
 }
 
 /*Styling for hearsay Project in hearsay.html*/
-
+#concertgoer-img {
+  max-width: 45%;
+}
 
 
 /*When resizing the home page, the information will be presented image first and the text*/
 
-
+@media (max-width: 768px) {
+  .flex-s {
+    display: flex;
+    flex-direction: column; /* Stack on top */
+  }
+  .order-1 {
+    order: 1; /* Go down, bring Box B up */
+  }
+  .order-2 {
+    order: 2; /* Go down, bring Box B up */
+  }
+}
 
 
 
